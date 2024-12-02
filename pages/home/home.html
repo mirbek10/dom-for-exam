@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <header class=" shadow-xl">
+        <div class="w-[1000px] m-auto h-[50px] flex items-center justify-around">
+            <div>
+                <img src="../../img/aq1.svg" alt="">
+            </div>
+            <nav class="text-xl font-normal">
+                <!-- <a href="" class="">Home</a>
+                <a href="" class="ml-3">Contacts</a> -->
+                <a href="../../index.html" class="ml-3">На главное</a>
+                <!-- <button id="logoutBtn" class="border p-2 bg-red-500 rounded-xl text-white">Выйти</button> -->
+
+            </nav>
+        </div>
+    </header>
+    <div class="flex justify-center">
+        <h1 class="text-3xl font-bold my-4">Добро пожаловать в ваш профиль  !</h1>
+    </div>
+    <div class="w-[1006px] h-[800px] bg-white rounded-lg shadow-2xl overflow-hidden justify-center m-auto">
+        <!-- Обложка -->
+        <div class="relative h-[206px] bg-gradient-to-r from-purple-500 to-blue-500">
+            <!-- Индикатор статуса -->
+            <div id="statusIndicator" 
+                 class="absolute bottom-2 left-2 w-4 h-4 rounded-full border-2 border-white bg-green-500"></div>
+        </div>
+        <!-- Информация о профиле -->
+        <div class="text-center p-6 mt-[-72px] flex">
+            <!-- Аватар 111111111111111111111111111111111111111111111111-->
+            <div class="text-center bg-white p-6 rounded-lg ">
+                <!-- Фото профиля -->
+                <div class="relative">
+                    <img id="profileImage" 
+                         src="https://via.placeholder.com/150" 
+                         alt="Фото профиля" 
+                         class="w-40 h-40 rounded-full object-cover mx-auto  border-gray-300">
+                    <!-- Кнопка выбора файла -->
+                    <button id="changePhotoButton" 
+                            class="absolute bottom-0 right-0 bg-blue-500 text-white p-2 rounded-full shadow-lg hover:bg-blue-600">
+                        ✎
+                    </button>
+                </div>
+                <!-- Поле загрузки файла -->
+                <input type="file" id="imageUpload" accept="image/*" class="hidden">
+
+            </div>
+            <!-- 111111111111111111111111111111111111111111111111111111111 -->
+             <div class="mt-[40px]">
+
+             
+            <!-- Имя пользователя -->
+            <h1 class="text-xl font-bold mt-[18px]"><span id="userName" class="text-green-500"></span></h1>
+            <!-- Биография -->
+            <!-- Статистика -->
+            <div class="flex justify-around mt-6 ml-[50px] gap-[44px]">
+                <div class="text-center ml-">
+                    <span id="projects" class="block text-xl font-bold">0</span>
+                    <p class="text-sm text-gray-600">Проекты</p>
+                </div>
+                <div class="text-center">
+                    <span id="followers" class="block text-xl font-bold">0</span>
+                    <p class="text-sm text-gray-600">Подписчики</p>
+                </div>
+            </div>
+        </div>
+    </div><div class="mt-[30px] ml-[67px] ">
+        <h1 class=" text-3xl">О себе</h1>
+        <p class="text-[20px] text-gray-500 ml-[50px] "><span id="userAbout"></span></p>
+
+    </div>
+    <div class="mt-[30px] ml-[67px]">
+        <h1 class="text-3xl ">Мой email</h1>
+        <span class="mt-[15px] ml-[40px]" id="userEmail"></span>
+    </div>
+    </div>
+    <script src="./home.js"></script>
+</body>
+
+</html>

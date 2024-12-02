@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <header>
@@ -46,8 +47,8 @@
                          </div>
                     </div>
                         <div class="block-2">
-                            <li>Частые вопросы</li>
-                            <li>Сотрудничество</li>
+                            <li class="li-1">Частые вопросы</li>
+                            <li class="li-1">Сотрудничество</li>
                         </div>
                     </nav>
                     <div class="block-inside">
@@ -55,12 +56,12 @@
                         <label for="toggle-heart" aria-label="like"><img src="./img/icon_favorite.svg" alt="" class="filter"></label>
                         <img src="./img/Vector (9).svg" alt="">
                         <input type="search" placeholder="Поиск по названию" class="input1">
-                        <img src="./img/Frame (10).svg" alt="">
-                        <nav>
-                            <ol>
-                                <li>8 (843) 528-65-48</li>
-                            </ol>
-                        </nav>
+                        <a class="a-1" href="./pages/home/home.html">Профиль</a>
+                        <div class="div1232">
+                            <a href="./pages/signein/signein.html"><button class="btn1">Регестрация</button></a>
+                            <a href="./pages/signeup/signeup.html"><button class="btn2">Вход</button></a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -77,11 +78,11 @@
                     <p class="pp">Хиты продаж</p>
                 </div>
                 <div class="five-img">
-                    <img src="./img/youtube 1 (Traced).svg" alt="">
-                    <img src="./img/insta.svg" alt="">
-                    <img src="./img/logo_vk.svg" alt="">
-                    <img src="./img/whatsapp (Traced).svg" alt="">
-                    <img src="./img/telegram (Traced).svg" alt="">
+                    <a href=""><img class="img-12" src="./img/youtube 1 (Traced).svg" alt=""></a>
+                    <a href=""><img class="img-12" src="./img/insta.svg" alt=""></a>
+                    <a href=""><img class="img-12" src="./img/logo_vk.svg" alt=""></a>
+                    <a href=""><img class="img-12" src="./img/whatsapp (Traced).svg" alt=""></a>
+                    <a href=""><img class="img-12" src="./img/telegram (Traced).svg" alt=""></a>
                 </div>
             </div>
             <div class="tipo-login">
@@ -100,6 +101,7 @@
                 <input type="range" class="range">
                <h1 class="h1-text">13 000 ₽</h1> <h1 class="h1-text1">150 000 ₽</h1>
                 <button>Найти</button>
+                <a href="./pages/calculate/calculate.html"><button>Если хотите расчитать </button></a>
             </div>
         </div>
                 </div>
@@ -110,9 +112,7 @@
         <section>
           <div class="container">
              <div class="renar">
-                <div>
-                    <img src="./img/bg about.svg" alt="" class="dunor">
-                </div>
+                
                 <div class="kher">
                     <h3 class="clen">О нас</h3>
                 </div>
@@ -145,13 +145,14 @@
                      </div>
                     </div>
                     <!-- 4 -->
-                    <div>
+                    <a class="a-12"
+                     href="./pages/map/map.html">
                     <div class="cardf">
                      <img src="./img/Vector (12).svg" alt="" class="tenerf">
                      <p class="imerf">
-                        Средний рейтинг компании 4,5 из 5 (Avito, Google, Отзовик)
+                       Мы на карте 
                     </p>   
-                     </div>
+                     </div></a>
                     </div>
                 </div>
                 <!-- 1-->
@@ -169,6 +170,9 @@
                     <div>
                         <div class="daier">
                             <!-- 1 -->
+                            
+                                
+                            
                             <div class="cardfe">
                                 <div>
                                     <img src="./img/people.svg" alt="" class="ulenoli">
@@ -207,8 +211,12 @@
                                  <div class="gitent">
                                     <button class="floren">Подробнее</button>
                                  </div>
+                                 <div>
+                                    <!-- <button class="place-item" >хочу посетить </button> -->
+                                 </div>
                              </div>
                              </div>
+                            
                             <!-- 2 -->
                             <div class="cardfe">
                                 <div>
@@ -346,7 +354,7 @@
                                  </div>
                                 <div class="mderwqui">
                                     <p class="imerfeui">
-                                       Новая сосновка
+                                        Салмачи 1
                                    </p>   
                                 </div>
                                 <div class="klonerui">
@@ -387,8 +395,8 @@
                                  </div>
                                 <div class="mderwqui">
                                     <p class="imerfeui">
-                                       Новая сосновка
-                                   </p>   
+                                        Салмачи 1
+                                </p>   
                                 </div>
                                 <div class="klonerui">
                                    <div class="dinbui">
@@ -419,7 +427,8 @@
                                 </div>
                         </div>
                         <div>
-                            <button class="dfrtu">Узнать подробнее</button>
+                            <button id="view-selection" class="button-primary">Посмотреть выбранное</button>
+                           
                         </div>
                         </div>
                 </div>
@@ -473,6 +482,21 @@
                 </div>
                 <button class="button-click">Узнать подробнее</button>
                 </div>
+                <div id="popupContain" class="popup-overl">
+                    <div class="popup-bo">
+                      
+                      
+                      <div class="div121">
+                        <h1 class="h1-111 ">Повар - Кейтеринг</h1>
+                        <h1 class="h1-121">Мы можем предложить выездного повара или организацию полноценного банкета на ваше мероприятие</h1>
+                        <h1 class="h1-123">Напишите нашему специалисту напрямую. Он рассчитает стоимость и проконсультирует Вас по всем вопросам.</h1>
+                    </div>
+                      <button id="popup-clo" class="showPop">Закрыть</button>
+                    </div>
+                  </div>
+
+
+
             </div>
         </section>
         <section></section>
@@ -562,9 +586,39 @@
                 <h1>
                     Оставьте заявку и мы свяжемся с вами для уточнения деталей
                 </h1>       
-           
-                <button>Оставить заявку</button>
-            </div>
+                <button class="showPopup">Оставить заявку</button>
+           </div>
+                
+
+  <!-- Popup Window -->
+  <div id="popupContainer" class="popup-overlay">
+    <div class="popup-box">
+      <span class="popup-close">&times;</span>
+      <h1>Заполните форму</h1>
+      <div class="div123">
+
+      
+      <input class="input-1"  type="text" placeholder="name">
+      <input class="input-1"  type="email" placeholder="email">
+      <input class="input-1"  type="password" placeholder="password">
+    </div>
+      <button class="btn1231">Оставить заявку</button>
+    </div>
+  </div>
+  <!-- 2222222222222222222 -->
+  <div id="popupContaine" class="popup-overla">
+    <div class="popup-bo">
+      
+      
+      <div class="div12">
+        <h1 class="h1-11">Ваша заявка отправлена!</h1>
+        <h1 class="h1-12">Мы свяжемся с вами в течение 15 минут для уточнения деталей</h1>
+      
+    </div>
+      <button id="popup-clos" class="showPopu">Закрыть</button>
+    </div>
+  </div>
+            
             </div>
             </div>
         </section>
@@ -578,29 +632,29 @@
                 <p>Согласие на обработку персональных данных</p>
               </div>
               <div class="div-footer1">
-                <h1>Каталог</h1>
-                <p>С бассейном</p>
-                <p>Семейные и уютные</p>
-                <p>Хиты продаж</p>
-                <p>Под свадьбы и корпоративы</p>
-                <p>С русской баней на дровах</p>
+               <h1 class="p-1">Каталог</h1>
+                <p class="p-1">С бассейном</p>
+                <p class="p-1">Семейные и уютные</p>
+                <p class="p-1">Хиты продаж</p>
+                <p class="p-1">Под свадьбы и корпоративы</p>
+                <p class="p-1">С русской баней на дровах</p>
               </div>
               <div class="div-footer2">
-                <p>Сотрудничество</p>
-                <p>Частые вопросы</p>
+                <p class="p-1">Сотрудничество</p>
+                <p class="p-1">Частые вопросы</p>
               </div>
               <div class="div-footer3">
                 <nav>
                     <ol>
-                     <img src="./img/Frame (11).svg" alt="">   <li>8 (843) 528-65-48</li>
+                     <img src="./img/Frame (11).svg" alt="">   <li class="p-1">8 (843) 528-65-48</li>
                     </ol>
                 </nav>
                 <div class="div-footer3-img">
-                    <img src="./img/youtube 1 (Traced).svg" alt="">
-                    <img src="./img/insta.svg" alt="">
-                    <img src="./img/logo_vk.svg" alt="">
-                    <img src="./img/whatsapp (Traced).svg" alt="">
-                    <img src="./img/telegram (Traced) (1).svg" alt="">
+                    <img class="img-12" src="./img/youtube 1 (Traced).svg" alt="">
+                    <img class="img-12" src="./img/insta.svg" alt="">
+                    <img class="img-12" src="./img/logo_vk.svg" alt="">
+                    <img class="img-12" src="./img/whatsapp (Traced).svg" alt="">
+                    <img class="img-12" src="./img/telegram (Traced) (1).svg" alt="">
                 </div>
               </div>
             </div>
