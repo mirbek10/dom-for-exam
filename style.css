@@ -16,7 +16,7 @@ position: relative;
 z-index: 1;
 }
 .container{
-    /* width: 1920px; */
+    
 height: 949px;
 margin: 0 auto; 
 }
@@ -135,7 +135,7 @@ transform: translateY(0);
   }
 }
 .block-2{
-    margin-right: -400px;
+    margin-right: -594px;
     color: white;
     align-items: center;
     display: flex;
@@ -145,6 +145,20 @@ font-size: 18px;
 font-weight: 560;
 line-height: 21.94px;
 text-align: left;
+
+
+}
+.li-1:hover{
+    color: #F4683F;
+cursor: pointer;
+transition: 1s;
+animation: bounce 0.3 ease infinite;
+}
+.img-12:hover{
+    scale: 1.6;
+    transition: 0.6s;
+    animation: bounce 0.3 ease infinite;
+    background-image: #f4683f;
 
 }
 .block{
@@ -195,6 +209,47 @@ margin-left: -10px;
     width: 240px;
     border: none;
     outline: none;
+}
+.a-1{
+  text-decoration: none;
+  color: white;
+}
+.a-1:hover{
+  text-decoration: underline;
+  color: #F4683F;
+}
+.a-1:focus{
+  color: #fff;
+}
+.div1232{
+  margin-left: 20px;
+  display: flex;
+  
+}
+.btn1{
+  border-radius: 12px  0 0 12px;
+  height: 30px;
+  background-color: #00000000;
+  width: 130px;
+  border-color: #fff;
+  color: #fff;
+  margin-left: 12px;
+}
+.btn2{
+  width: 90px;
+  height: 30px;
+  border-radius:0 12px 12px 0;
+  background-color: #00000000;
+  color: #f4683f;
+  border-color:#f4683f ;
+}
+.btn1:hover{
+  background-color: #fff;
+  color: #000;
+}
+.btn2:hover{
+  background-color: #f4683f;
+  color: #000;
 }
 
 [id='toggle-heart'] {
@@ -384,10 +439,11 @@ width: 100px;
   .tipo-login{
     position: relative;
     width: 360px;
-height: 497px;
-background-color: white;
-justify-content: center;
-border-radius: 10px; border-radius: 10px;
+  height: 557px;
+  background-color: white;
+  justify-content: center;
+  border-radius: 10px; 
+  border-radius: 10px;
   }
   .dad-label{
     margin-top: 50px;
@@ -433,7 +489,6 @@ padding-left: 20px;
    bottom: 310px;
 }
 #input-number{
-    margin-top: 70px;
  margin-left: 44px;
     width: 278px;
 height: 50px;
@@ -486,7 +541,7 @@ cursor: pointer;
   padding-top: 100px;
     width: 1900px;
     height: 1100px;
-    background-image: url(./img/bg\ services.svg);
+
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
     margin: 0 auto;
@@ -530,7 +585,6 @@ transition: all 0.5s;
 } 
 .block-div:hover { 
     border: 1px solid black; 
-    transform: scale(1.05); 
     cursor: pointer;
     border: none;
   } 
@@ -566,6 +620,10 @@ font-size: 14px;
 font-weight: 500;
 line-height: 19px;
 text-align: left;
+}
+.p-1:hover{
+    color: #f4683f;
+
 }
 .div-footer1{
   width: 250px;
@@ -800,23 +858,24 @@ top: 0;
       }
       .ulenoli{
         position: absolute;
-        z-index: 4;
+        z-index: 3;
+        
         margin-top: 24px;
         margin-left: 322px;
       }
 
       .dfghjk{
+        position: absolute;
         margin-top: -94px;
         margin-left: 339px;
         z-index: 8;
       }
        .cardfe:hover {
-          border: 1px solid black;
-          transform: scale(1.05);
+        border: 1px solid black;
+        transform: scale(1.05);
+          
         }
-        .cardfe:active {
-            transform: scale(0.95) rotateZ(1.7deg);
-        }
+        
         .mderwq{
          width: 187px;
          height: 36px;
@@ -884,6 +943,20 @@ top: 0;
         border: none;   
         background-color: rgba(255, 255, 255, 1);
     }
+    #view-selection{
+
+      margin: auto;
+      margin-top: 90px;
+      width: 280px;
+      height: 50px;
+      border-radius: 7px;
+      background: #F4683F;
+      color: white;
+      border: none;
+      margin-left: 550px;
+      
+
+    }
      /* экинчи катар  */
     .hyului{
         display: flex;
@@ -909,9 +982,7 @@ top: 0;
             border: 1px solid black;
             transform: scale(1.05);
           }
-          .cardfeui:active {
-              transform: scale(0.95) rotateZ(1.7deg);
-          }
+          
           .mderwqui{
            width: 187px;
            height: 36px;
@@ -1043,12 +1114,12 @@ text-align: left;
         .zxert h1{
           padding-top: 20px;
           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 18px;
-font-weight: 500;
-line-height: 28.8px;
-text-align: left;
-color: white;
-width: 270px;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 28.8px;
+          text-align: left;
+          color: white;
+          width: 270px;
         }
         .zxert button{
           width: 260px;
@@ -1090,7 +1161,7 @@ margin-top: 50px;
            border-radius: 30px;
            margin-top: 150px;
            border: none;
-           transition: all 0.5s; 
+          
         }
         .button-click:hover {  
           transform: scale(1.05); 
@@ -1099,3 +1170,197 @@ margin-top: 50px;
         .button-click:active { 
             transform: scale(0.95) rotateZ(1.7deg); 
         }
+.q1234{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, .8);
+}
+.div-123{
+ width: 100%;
+ height: 100%;
+
+}
+.input2{
+    width: 312px    ;
+    height: 50px;
+    margin-top: 20px;
+    
+    border-radius: 250px;
+    z-index: 12;
+    border: none;
+}
+.a-12{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Общие стили */body {
+  font-family: Arial, sans-serif;}
+/* Стили для всплывающего окна */
+.popup-overlay {  
+  display: none; /* По умолчанию скрыто */
+  position: fixed; 
+   top: 0;
+  left: 0; 
+   width: 100%;
+  height: 100%; 
+   background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center; 
+   align-items: center;
+   z-index: 999;
+   color: #000;
+}
+.popup-box{  
+  
+  background-color: #fff;
+  padding: 20px; 
+  border-radius: 8px;
+  text-align: center; 
+   width: 500px;
+   height:450px;
+  position: relative;
+}
+.popup-close{
+  position: absolute;  top: 10px;
+  right: 15px;  font-size: 20px;
+  cursor: pointer;  color: #888;
+}
+.popup-close:hover {  color: #000;
+}
+.div123{
+  margin-top: 58px;
+}
+.btn1231{
+  width: 259px;
+  height: 40px;
+  margin-top: 45px;
+  background-color: #F4683F;
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+
+}
+.input-1{
+  width: 312px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+
+}
+/* 222222222222222 */
+.popup-overla {  
+  display: none; /* По умолчанию скрыто */
+  position: fixed; 
+   top: 0;
+  left: 0; 
+   width: 100%;
+  height: 100%; 
+   background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center; 
+   align-items: center;
+   z-index: 9999;
+   color: #000;
+}
+.popup-bo{  background-color: #fff;
+  padding: 20px; 
+  border-radius: 8px;
+  text-align: center; 
+   width: 500px;
+   height:450px;
+  position: relative;
+}
+.popup-clos{
+  position: absolute;  top: 10px;
+  right: 15px;  font-size: 20px;
+  cursor: pointer;  color: #888;
+}
+.popup-close:hover {  color: #000;
+}
+.div12{
+  margin-top: 58px;
+}
+.showPopu{
+  width: 259px;
+  height: 40px;
+  margin-top: 45px;
+  background-color: #F4683F;
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+
+}
+
+
+.h1-11{
+  font: raleway;
+
+}
+.h1-12{
+  font-size: 18px;
+  margin-top: 50px;
+
+
+}
+/* 3333333333333333333333 */
+.popup-overl {  
+  display: none; /* По умолчанию скрыто */
+  position: fixed; 
+   top: 0;
+  left: 0; 
+   width: 100%;
+  height: 100%; 
+   background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center; 
+   align-items: center;
+   z-index: 9999;
+   color: #000;
+}
+.popup-b{  background-color: #fff;
+  padding: 20px; 
+  border-radius: 8px;
+   
+   width: 500px;
+   height:450px;
+  position: relative;
+}
+.popup-clo{
+  position: absolute; 
+   top: 10px;
+  right: 15px;
+    font-size: 20px;
+  cursor: pointer;
+    color: #888;
+}
+.popup-clo:hover {
+    color: #000;
+}
+.div121{
+  margin-top: 58px;
+}
+.showPop{
+  width: 259px;
+  height: 40px;
+  margin-top: 45px;
+  background-color: #F4683F;
+  color: #fff;
+  border: none;
+  border-radius: 13px;
+
+}
+.h1-111{
+  margin-top: -40px;
+  size: 10px;
+  
+}
+.h1-121{
+  margin-top: 30px;
+  font-size: 19px;
+}
+.h1-123{
+  margin-top: 30px;
+  font-size: 19px;
+}

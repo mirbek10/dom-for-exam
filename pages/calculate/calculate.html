@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-sm border-[#F4683F] border-2">
+        <h1 class="text-xl font-bold mb-4 text-center">Калькулятор стоимости домика</h1>
+        <form id="calculatorForm" class="space-y-4">
+            <div>
+                <label for="area" class="block text-sm font-medium text-gray-700">Площадь домика (м²):</label>
+                <input type="number" id="area" name="area" min="10" max="200" 
+                    class="mt-1 block w-full border border-[#F4683F] rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
+            </div>
+            <div>
+                <label for="material" class="block text-sm font-medium text-gray-700">Материал:</label>
+                <select id="material" name="material" 
+                    class="mt-1 block w-full border border-[#F4683F] rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
+                    <option value="wood">Дерево</option>
+                    <option value="brick">Кирпич</option>
+                    <option value="modular">Модульный</option>
+                </select>
+            </div>
+            <div>
+                <label for="utilities" class="block text-sm font-medium text-gray-700">Наличие коммуникаций:</label>
+                <select id="utilities" name="utilities" 
+                    class="mt-1 block w-full border border-[#F4683F] rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm" required>
+                    <option value="basic">Базовые (электричество)</option>
+                    <option value="standard">Стандартные (электричество, вода)</option>
+                    <option value="full">Полный комплект (электричество, вода, отопление)</option>
+                </select>
+            </div>
+            <button type="button" id="calculateButton" 
+                class="w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-[#F4683F] focus:ring-offset-2">
+                Рассчитать
+            </button>
+        </form>
+        <div id="result" class="mt-4 text-center text-gray-700 text-sm"></div>
+    </div>
+    <script src="caculate.js"></script>
+</body>
+</html>
