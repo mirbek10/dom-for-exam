@@ -1084,6 +1084,7 @@ top: 0;
        }
        .bvert{
         margin-left: 234px;
+        position: relative;
         
        }
        .vkinhr{
@@ -1093,6 +1094,23 @@ font-weight: 800;
 line-height: 60px;
 text-align: left;
 
+       }
+       .asp1{
+        font-size: 22px;
+       }
+       .toggle-btn{
+        position: absolute;
+        right: 300px;
+        margin-top: -20px;
+        background: #fff;
+        border: none;
+       }
+       .hide-btn{
+        position: absolute;
+        right: 300px;
+        margin-top: -20px;
+        background: #fff;
+        border: none;
        }
 
         /* 6 section */
@@ -1363,4 +1381,18 @@ margin-top: 50px;
 .h1-123{
   margin-top: 30px;
   font-size: 19px;
+}
+.qa1{
+  width:40px;
+  height: 30px;
+}
+.qa1:hover{
+  scale: 1.4;
+    transition: 0.6s;
+    animation: bounce 0.3 ease infinite;
+    background-image: #f4683f;
+}
+.div-footer3-img{
+  display: flex;
+  gap: 6px;
 }

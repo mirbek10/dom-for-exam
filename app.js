@@ -29,58 +29,57 @@ color1.onclick = () =>{
 
 
 
-// Получаем элементыconst 
-popupOverlay = document.getElementById('popupContainer'); // Само всплывающее окно
-const openPopupButton = document.querySelector('.showPopup'); // Кнопка "Открыть окно"
-const closePopupButton = document.querySelector('.popup-close'); // Кнопка-крестик для закрытия окна
+popupOverlay = document.getElementById('popupContainer');
+const openPopupButton = document.querySelector('.showPopup'); 
+const closePopupButton = document.querySelector('.popup-close');
 
-// Открытие окна
+
 openPopupButton.addEventListener('click', function () {  popupOverlay.style.display = 'flex'; // Делаем окно видимым
 });
-// Закрытие окна при клике на крестик
+
 closePopupButton.addEventListener('click', function () {
-  popupOverlay.style.display = 'none'; // Скрываем окно
+  popupOverlay.style.display = 'none'; 
   });
-// Закрытие окна при клике на затемнённый фон
 window.addEventListener('click', function (event) {  if (event.target === popupOverlay) {
-    popupOverlay.style.display = 'none'; // Закрываем окно  
+    popupOverlay.style.display = 'none'; 
     }
 });
 // 222222222222222222
-popupOverla = document.getElementById('popupContaine'); // Само всплывающее окно
-const openPopupButto = document.querySelector('.btn1231'); // Кнопка "Открыть окно"
-const closePopupButto = document.querySelector('#popup-clos'); // Кнопка-крестик для закрытия окна
+popupOverla = document.getElementById('popupContaine'); 
+const openPopupButto = document.querySelector('.btn1231'); 
+const closePopupButto = document.querySelector('#popup-clos'); 
 
-openPopupButto.addEventListener('click', function () {  popupOverla.style.display = 'flex'; // Делаем окно видимым
+openPopupButto.addEventListener('click', function () {  popupOverla.style.display = 'flex'; 
     popupOverlay.style.display = 'none';
 });
-// Закрытие окна при клике на крестик
+
 closePopupButto.addEventListener('click', function () {
-  popupOverla.style.display = 'none'; // Скрываем окно
+  popupOverla.style.display = 'none'; 
   });
 
-  // Закрытие окна при клике на затемнённый фон
-window.addEventListener('click', function (event) {  if (event.target === popupOverlay) {
-    popupOverla.style.display = 'none'; // Закрываем окно  
+  
+window.addEventListener('click', function (event) {  if (event.target === popupOverla) {
+    popupOverla.style.display = 'none'; 
     }})
     // 333333333333333333333
-popupOverla = document.getElementById('popupContain'); // Само всплывающее окно
-const openPopupButt = document.querySelector('.button-click'); // Кнопка "Открыть окно"
-const closePopupButt = document.querySelector('#popup-clo'); // Кнопка-крестик для закрытия окна
+const popupOverl = document.querySelector('.popup-overl'); 
+const openPopupButt = document.querySelector('.button-click'); 
+const closePopupButt = document.querySelector('#popup-clo');
 
 openPopupButt.addEventListener('click', function () {  
-    popupOverla.style.display = 'flex'; // Делаем окно видимым
-    popupOverla.style.display = 'none';
+    popupOverl.style.display = 'flex'; 
+    // popupOverl.style.display = 'none';
 });
-// Закрытие окна при клике на крестик
+
+
 closePopupButt.addEventListener('click', function () {
-  popupOverla.style.display = 'none'; // Скрываем окно
+  popupOverl.style.display = 'none'; 
   });
 
-  // Закрытие окна при клике на затемнённый фон
+
 window.addEventListener('click', function (event) {  
-    if (event.target === popupOverlay) {
-    popupOverla.style.display = 'none'; // Закрываем окно  
+    if (event.target === popupOverl) {
+    popupOverl.style.display = 'none';   
     }})
     // 3333333333333333333333333
     document.addEventListener('DOMContentLoaded', () => {
@@ -94,10 +93,10 @@ window.addEventListener('click', function (event) {
                 const name = card.querySelector('p.imerfe, p.imerfeui').textContent.trim();
                 const price = card.querySelector('.fladettr, .fladettrui').textContent.trim();
 
-                // Собираем данные карточки
+                
                 const cardData = { image, name, price };
                 
-                // Проверяем, есть ли карточка уже в выбранных
+                
                 if (!selection.some(item => item.name === name)) {
                     selection.push(cardData);
                 }
@@ -106,14 +105,42 @@ window.addEventListener('click', function (event) {
             });
         });
 
-        // Обработка кнопки "Посмотреть выбранное"
+        
         const viewSelectionButton = document.getElementById('view-selection');
         viewSelectionButton.addEventListener('click', () => {
-            // Сохраняем выбранные карточки в localStorage
+            
             localStorage.setItem('selectedCards', JSON.stringify(selection));
 
-            // Перенаправляем на страницу "Выбранное"
+            
             window.location.href = './pages/selected/selected.html';
         });
     });
     
+
+     // Подробнее
+     const toggleButtons = document.querySelectorAll('.toggle-btn');
+
+     toggleButtons.forEach(button => {
+         button.addEventListener('click', () => {
+             const additionalInfo = button.nextElementSibling;
+ 
+             if (additionalInfo.style.display === "none") {
+                 additionalInfo.style.display = "block";
+                 button.style.display = "none"; 
+             }
+         });
+     });
+ 
+     // Скрыть
+     const hideButtons = document.querySelectorAll('.hide-btn');
+ 
+     hideButtons.forEach(button => {
+         button.addEventListener('click', () => {
+             const additionalInfo = button.parentElement;
+             const toggleButton = additionalInfo.previousElementSibling;
+ 
+             additionalInfo.style.display = "none"; 
+             toggleButton.style.display = "inline-block"; 
+         });
+     });
+ 

@@ -16,14 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-  // Обновление статистики
 let projects = 2020; 
-let followers = 1020; // Примерное количество подписчиков
+let followers = 1020; 
 
 const projectsEl = document.getElementById("projects");
 const followersEl = document.getElementById("followers");
 
-// Эффект анимации увеличения чисел
 function animateValue(element, start, end, duration) {
     let startTime = null;
 
@@ -44,40 +42,40 @@ animateValue(followersEl, 0, followers, 2000);
 
 
 // 11111111111111111111111111111111111111111
-// Имитация изменения статуса
+
 document.addEventListener("DOMContentLoaded", () => {
     const imageUpload = document.getElementById("imageUpload");
     const profileImage = document.getElementById("profileImage");
     const changePhotoButton = document.getElementById("changePhotoButton");
 
-    // Проверяем, есть ли сохраненное изображение в localStorage
+    //  localStorage
     const savedImage = localStorage.getItem("profileImage");
     if (savedImage) {
         profileImage.src = savedImage;
     }
 
-    // Открыть выбор файла при нажатии на кнопку
+    
     changePhotoButton.addEventListener("click", () => {
         imageUpload.click();
     });
 
-    // Обработка загруженного файла
+   
     imageUpload.addEventListener("change", () => {
         const file = imageUpload.files[0];
 
         if (file) {
             const reader = new FileReader();
 
-            // Когда файл загружен, обновляем изображение
+            
             reader.onload = (e) => {
                 const imageData = e.target.result;
                 profileImage.src = imageData;
 
-                // Сохраняем изображение в localStorage
+             
                 localStorage.setItem("profileImage", imageData);
             };
 
-            reader.readAsDataURL(file); // Считываем содержимое файла как Data URL
+            reader.readAsDataURL(file); 
         }
     });
 });
