@@ -26,6 +26,6 @@ document.getElementById("calculateButton").addEventListener("click", function ()
     const totalCost = baseCost * utilityMultipliers[utilities];
 
     document.getElementById("result").innerHTML = `
-        <p>Примерная стоимость строительства: <strong>${totalCost.toLocaleString()} ₽</strong></p>
+        <p>Примерная стоимость строительства: <strong>${totalCost.toLocaleString()} сом</strong></p>
     `;
 });
