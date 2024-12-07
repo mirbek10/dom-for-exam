@@ -82,39 +82,7 @@ window.addEventListener('click', function (event) {
     popupOverl.style.display = 'none';   
     }})
     // 3333333333333333333333333
-    document.addEventListener('DOMContentLoaded', () => {
-        const selection = [];
-        const buttons = document.querySelectorAll('.floren, .florenui'); // Находим все кнопки "Подробнее"
-
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => {
-                const card = button.closest('.cardfe, .cardfeui');
-                const image = card.querySelector('img.tenerfe, img.tenerfeui').getAttribute('src');
-                const name = card.querySelector('p.imerfe, p.imerfeui').textContent.trim();
-                const price = card.querySelector('.fladettr, .fladettrui').textContent.trim();
-
-                
-                const cardData = { image, name, price };
-                
-                
-                if (!selection.some(item => item.name === name)) {
-                    selection.push(cardData);
-                }
-                
-                alert(`Добавлено: ${name}`);
-            });
-        });
-
-        
-        const viewSelectionButton = document.getElementById('view-selection');
-        viewSelectionButton.addEventListener('click', () => {
-            
-            localStorage.setItem('selectedCards', JSON.stringify(selection));
-
-            
-            window.location.href = './pages/selected/selected.html';
-        });
-    });
+    
     
 
      // Подробнее

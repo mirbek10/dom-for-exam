@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
       users.push({ name, email, password, about });
       localStorage.setItem("users", JSON.stringify(users));
       alert("Пользователь успешно зарегистрирован");
-      window.location.href = "../signin/signin.html";
+      window.location.href = "../signeup/signeup.html";
     });
   });
