@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-let projects = 2020; 
+let projects = 100;
 let followers = 1020; 
 
 const projectsEl = document.getElementById("projects");

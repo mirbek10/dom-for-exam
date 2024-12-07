@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="w-[1000px] m-auto h-[50px] ">
+            <nav class="text-3xl text-center">
+                <a class="hover:text-orange-600" href="#">все товары</a>
+                <a href="../favorites/favorites.html" class="ml-[30px] hover:text-orange-600">избранные</a>
+                <a href="../../index.html"><button class="  ml-[60px] px-4 py-2 rounded hover:text-orange-600">
+                    Назад
+                </button></a>
+            </nav>
+
+        </div>
+    </header>
+    <div id="photos" class="w-[1560px] m-auto flex flex-wrap gap-[20px] justify-between"></div>
+    <script src="./cart.js"></script>
+</body>
+
+</html>
