@@ -1395,4 +1395,8 @@ margin-top: 50px;
 .div-footer3-img{
   display: flex;
   gap: 6px;
+  
+}
+.q{
+  position: sticky;
 }
